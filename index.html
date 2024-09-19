@@ -10,15 +10,22 @@
 		<script type="application/processing">
 			void setup(){
 				size(1000, 1000);
+        img = loadImage("https://cdn.glitch.global/76f50019-d1c9-45d8-9004-7ed4ec43ee0d/albert.jpg?v=1726777723103");
+        img1 = loadImage("https://cdn.glitch.global/76f50019-d1c9-45d8-9004-7ed4ec43ee0d/download.jpg?v=1726778634329");
+        img2 = loadImage("https://cdn.glitch.global/76f50019-d1c9-45d8-9004-7ed4ec43ee0d/download.jpg?v=1726778634329");
+        img3 = loadImage("https://cdn.glitch.global/76f50019-d1c9-45d8-9004-7ed4ec43ee0d/download.jpg?v=1726778634329");
+        img4 = loadImage("https://cdn.glitch.global/76f50019-d1c9-45d8-9004-7ed4ec43ee0d/download.jpg?v=1726778634329");
 			}
 			
-      img = loadImage("1583003474847.jpg");
+      
 			void draw(){
         int m = millis();
-        if (m % 100 === 0) {
+        if (m % 10 === 0) {
 				  background(random(0, 255), random(0, 255), random(0, 255));
         }
-				image(img, mouseXX, mouseY);
+        imageMode(CENTER);
+				image(img, mouseX, mouseY, 200, 200);
+        image(img1, )
 			}
 		</script>
 		<canvas> </canvas>

@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>My Sketch</title>
-    
+  <head>
+    <title>My Sketch</title>
+
     <!-- Load the Processing.js library -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.0/processing.min.js"></script>
-	</head>
-	<body>
-		<script type="application/processing">
-			void setup(){
-				size(1000, 1000);
-        img = loadImage("https://cdn.glitch.global/76f50019-d1c9-45d8-9004-7ed4ec43ee0d/albert.jpg?v=1726777723103");
-        img1 = loadImage("https://cdn.glitch.global/76f50019-d1c9-45d8-9004-7ed4ec43ee0d/download.jpg?v=1726778634329");
-        img2 = loadImage("https://cdn.glitch.global/76f50019-d1c9-45d8-9004-7ed4ec43ee0d/download.jpg?v=1726778634329");
-        img3 = loadImage("https://cdn.glitch.global/76f50019-d1c9-45d8-9004-7ed4ec43ee0d/download.jpg?v=1726778634329");
-        img4 = loadImage("https://cdn.glitch.global/76f50019-d1c9-45d8-9004-7ed4ec43ee0d/download.jpg?v=1726778634329");
-			}
-			
-      int m = 0;
-			void draw(){
-        if (m < 100) {
-          m += 1;
-        } else {
-          m = 0;
-        }
-        if (m % 10 === 0) {
-				  background(random(0, 255), random(0, 255), random(0, 255));
-        }
-        imageMode(CENTER);
-				image(img, mouseX, mouseY, 100, 100);
-        image(img1, 100, 100, m, m);
-        image(img1, 300, 300, m, m);
-        image(img1, 300, 300, m, m);
-        image(img1, 100, 300, m, m);
-        image(img1, 300, 100, m, m);
-			}
-      void mousePressed() {
-      textSize(250);
-        text("WOW", 0, 300);
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.0/processing.min.js"></script>
+  </head>
+  <body>
+    <script type="application/processing">
+      void setup(){
+      	size(1000, 1000);
+           img = loadImage("https://cdn.glitch.global/76f50019-d1c9-45d8-9004-7ed4ec43ee0d/albert.jpg?v=1726777723103");
+           img1 = loadImage("https://cdn.glitch.global/76f50019-d1c9-45d8-9004-7ed4ec43ee0d/download.jpg?v=1726778634329");
+           img2 = loadImage("https://cdn.glitch.global/76f50019-d1c9-45d8-9004-7ed4ec43ee0d/download.jpg?v=1726778634329");
+           img3 = loadImage("https://cdn.glitch.global/76f50019-d1c9-45d8-9004-7ed4ec43ee0d/download.jpg?v=1726778634329");
+           img4 = loadImage("https://cdn.glitch.global/76f50019-d1c9-45d8-9004-7ed4ec43ee0d/download.jpg?v=1726778634329");
       }
-		</script>
-		<canvas> </canvas>
-	</body>
+
+         int m = 0;
+      void draw(){
+           if (m < 100) {
+             m += 1;
+           } else {
+             m = 0;
+           }
+           if (m % 10 === 0) {
+      	  background(random(0, 255), random(0, 255), random(0, 255));
+           }
+           imageMode(CENTER);
+      	image(img, mouseX, mouseY, 100, 100);
+           image(img1, 100, 100, m, m);
+           image(img1, 300, 300, m, m);
+           image(img1, 300, 300, m, m);
+           image(img1, 100, 300, m, m);
+           image(img1, 300, 100, m, m);
+      }
+         void mousePressed() {
+         textSize(250);
+           text("WOW", 0, 300);
+         }
+    </script>
+    <canvas> </canvas>
+  </body>
 </html>

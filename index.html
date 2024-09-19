@@ -17,16 +17,28 @@
         img4 = loadImage("https://cdn.glitch.global/76f50019-d1c9-45d8-9004-7ed4ec43ee0d/download.jpg?v=1726778634329");
 			}
 			
-      
+      int m = 0;
 			void draw(){
-        int m = millis();
+        if (m < 100) {
+          m += 1;
+        } else {
+          m = 0;
+        }
         if (m % 10 === 0) {
 				  background(random(0, 255), random(0, 255), random(0, 255));
         }
         imageMode(CENTER);
-				image(img, mouseX, mouseY, 200, 200);
-        image(img1, )
+				image(img, mouseX, mouseY, 100, 100);
+        image(img1, 100, 100, m, m);
+        image(img1, 300, 300, m, m);
+        image(img1, 300, 300, m, m);
+        image(img1, 100, 300, m, m);
+        image(img1, 300, 100, m, m);
 			}
+      void mousePressed() {
+      textSize(250);
+        text("WOW", 0, 300);
+      }
 		</script>
 		<canvas> </canvas>
 	</body>
